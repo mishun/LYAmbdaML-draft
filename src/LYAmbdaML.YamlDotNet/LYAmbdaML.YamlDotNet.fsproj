@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Product>LYAmbdaML.YamlDotNet</Product> 
+    <Copyright>Copyright © 2023</Copyright>
+    <PackageProjectUrl>https://github.com/mishun/LYAmbdaML-draft</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mishun/LYAmbdaML-draft</RepositoryUrl>
+    <Description>F# YAML support based on YamlDotNet</Description>
+    <VersionPrefix>0.0.0</VersionPrefix>
+    <VersionSuffix>preview1</VersionSuffix>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ReflectionMetadata.fs" />
+    <Compile Include="Patterns.fs" />
+    <Compile Include="YamlDotNetHelper.fs" />
+    <Compile Include="DOM.fs" />
+    <Compile Include="Combinators.fs" />
+    <Compile Include="Serialization.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="YamlDotNet" Version="13.3.1" />
+  </ItemGroup>
+</Project>
